@@ -16,8 +16,7 @@ export default class Discover extends Component {
   }
 
   renderSectionItem({item}){
-    const circleAvatar = (item == '朋友圈') ? (<Image source={require('../../imgs/avatar.jpeg')} style={styles.avatar} />) : null
-    console.log(item);
+    const circleAvatar = (item.name == '朋友圈') ? (<Image source={require('../../imgs/avatar.jpeg')} style={styles.avatar} />) : null
     return (
       <View style={styles.item}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
